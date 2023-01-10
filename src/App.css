@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap");
+
+.dark {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+.dark input {
+  color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+.light {
+  background-color: #fff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+.light img {
+  background-color: #000000;
+  border-radius: 100%;
+}
+.light div {
+  border-color: #000000 !important;
+}
+.light input {
+  color: #000000 !important;
+  border-bottom-color: #000 !important ;
+}
+.light input::placeholder {
+  color: #000000 !important;
+}
+.light button {
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+.light button:hover {
+  color: #fff !important;
+  background-color: #000000 !important;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+.bn3 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bn3:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
