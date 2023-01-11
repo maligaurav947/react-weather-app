@@ -1,7 +1,7 @@
 
-# Quiz Game in React
+# React Weather App
 
-A Simple React Quiz App which contains the 4 MCQ’s which have 4 options in each.
+A Simple React Weather App That Show API Data Realtime
 
 
 
