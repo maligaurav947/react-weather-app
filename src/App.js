@@ -31,7 +31,7 @@ function App() {
     axios
       .get(apiURL)
       .then((res) => {
-        // console.log("response", res.data);
+        console.log("response", res.data);
         setData(res.data);
       })
       .catch((err) => {
@@ -57,7 +57,7 @@ function App() {
           <HiOutlineCloud /> react-weather-app
         </a>
         <div className="p-5 lg:p-10">
-          <div className="lg:h-48 h-96 flex flex-col items-center justify-center ">
+          <div className="h-72 flex flex-col items-center justify-center ">
             <div
               style={{
                 position: "absolute",
@@ -93,11 +93,12 @@ function App() {
           </div>
           {Object.keys(data).length > 0 && (
             <div className=" text-center mt-5" role="status">
-              <div className="grid gap-2 items-center">
-                <div className="grid items-center justify-center gap-3 lg:md:xl:gap-5">
+              <div className="grid items-center">
+                <div className="grid items-center justify-center gap-2">
                   <h5 className="text-5xl">
                     {data?.name},<span> {data?.sys?.country}</span>
                   </h5>
+
                   <h2 className="text-2xl capitalize">
                     {data?.weather[0]?.description}
                   </h2>
@@ -117,7 +118,7 @@ function App() {
                     </h3>
                   </div>
                   <img
-                    className="object-contain mb-5 "
+                    className="object-contain mb-5"
                     src={`http://openweathermap.org/img/wn/${data?.weather[0]?.icon}@2x.png`}
                   />
                 </div>
