@@ -2,7 +2,7 @@
 
 Welcome to the React Weather App! This is a simple web application that allows users to check the current weather conditions for a specific location.
 
-![App Screenshot](screenshot.png) <!-- Replace with an actual screenshot of your app -->
+![App Screenshot](https://raw.githubusercontent.com/maligaurav947/react-weather-app/master/src/Home.png) <!-- Replace with an actual screenshot of your app -->
 
 ## Features
 
@@ -12,7 +12,7 @@ Welcome to the React Weather App! This is a simple web application that allows u
 
 ## Demo
 
-Check out the live demo of the app: [React Weather App Demo](https://your-demo-link-here.com)
+Check out the live demo of the app: [React Weather App Demo](https://maligaurav947.github.io/react-weather-app/)
 
 ## Installation
 
